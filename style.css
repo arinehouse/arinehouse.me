@@ -1,0 +1,144 @@
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333
+}
+
+.header li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+.header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.header li a:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: #0d49ba;
+}
+
+.footer {
+  position: relative;
+  background-color: #333;
+  height: 40px;
+}
+
+.footer p {
+  font-family: helvetica;
+  float: left;
+  margin-left: 20px;
+  margin-top: 12px;
+  color: white;
+}
+
+.footer p a {
+  color: white;
+}
+
+.container {
+  display: inline-flex;
+  margin: auto;
+}
+
+.picture {
+  margin: 20px 20px 20px 150px;
+  float: left;
+}
+
+#prof-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.profile {
+  height: inherit;
+  float: left;
+  width: 600px;
+  height: 200px;
+}
+
+.profile h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.profile h3 {
+  text-align: center;
+  font-family: cursive, serif;
+}
+
+.profile span {
+  font-family: courier;
+}
+
+.social {
+  display: inline-flex;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.icon {
+  margin: 20px 10px;
+}
+
+.links {
+  text-align: center;
+  display: inline-block;
+  margin: 0 60px;
+}
+
+.about {
+  position: relative;
+  float: left;
+  margin: 5px;
+}
+
+.programming {
+  position: relative;
+  float: left;
+  margin: 5px;
+}
+
+.music {
+  position: relative;
+  float: right;
+  margin: 5px;
+}
+
+.linkImage {
+  width: 400px;
+  height: 450px;
+  border-radius: 3%;
+}
+
+h2 span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  bottom: 40px;
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: 0px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
