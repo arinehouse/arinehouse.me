@@ -9,21 +9,22 @@
   <body>
     <div class="header">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programming.html">Programming</a></li>
-        <li><a href="music.html">Music</a></li>
+        <li><a href="#top" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programming">Programming</a></li>
+        <li><a href="#music">Music</a></li>
       </ul>
     </div>
 
     <div class="container" id="top-level">
-      <div class="picture">
+      <a name="top"></a>
+      <!-- <div class="picture">
         <img id=prof-picture src="images/propic.jpg" />
-      </div>
+      </div> -->
 
       <div class="profile">
         <h1>Adam Rinehouse</h1>
-        <h3>Amateur Musician // Studying Programmer // Professional <span>[TBA]</span></h3>
+        <h3>'19 | Developer | Audiophile</h3>
       </div>
 
       <div class="social">
@@ -41,24 +42,78 @@
     </div>
 
     <div class="links">
-      <div class="about">
-        <a href="about.html">
+      <div class="nav">
+        <a href="#about">
           <img src="images/bentley.jpeg" class="linkImage" />
           <h2><span>About Me</span></h2>
         </a>
       </div>
 
-      <div class="programming">
-        <a href="programming.html">
+      <div class="nav">
+        <a href="#programming">
           <img src="images/code.jpeg" class="linkImage" />
           <h2><span>Programming</span></h2>
         </a>
       </div>
-      <div class="music">
-        <a href="music.html">
+      <div class="nav">
+        <a href="#music">
           <img src="images/sheet-music.jpeg" class="linkImage" />
           <h2><span>Music</span></h2>
         </a>
+      </div>
+    </div>
+
+    <div> <a name="about" />
+      <div class="section">
+        <h2>About Me</h2>
+        <p>Nice to meet you! I'm Adam Rinehouse, a Dartmouth College class of '19, hailing from Northeast Pennsylvania (in a region
+          near Scranton, home of NBC's <em>The Office</em>. I'm currently majoring in Computer Science and Music. I've
+          been an active member of the Dali Lab since fall of 2016, and quickly felt right at home there. I'm also an active
+          percussionist and composer, with a background in choral singing, and have played as a member of the Dartmouth
+          College Wind Ensemble since I got to Dartmouth in 2015. Oh, and that picture up there, that's me with my family's new puppy,
+          Bentley. If you'd like to learn more about me, scroll down to check out some of my past projects, both analog
+          and digital!</p>
+      </div>
+    </div>
+
+    <div> <a name="programming" />
+      <div class="section">
+        <h2>Programming Projects</h2>
+        <p>I started coding in my senior year of high school, learning Java for AP Computer Science. Since then I've been active
+          trying to learn many new languages. In the summer between freshman and sophomore year, I learned a little bit of Swift
+          Python, as well as the Command Line. Since joining Dali, I've had to learn C# (and the Unity framework), HTML and CSS,
+          and of course Git. I've also worked briefly with a startup called BookUp, where I learned React.js</p>
+        <div class="links">
+          <div class="nav">
+            <a href="http://dali.dartmouth.edu">
+              <img src="images/dali.png" id="dali-logo"/>
+            </a>
+          </div>
+          <div class="nav">
+            <a href="https://github.com/arinehouse">
+              <img src="icons/github.svg" id="github-logo"/>
+            </a>
+          </div>
+          <div class="nav">
+            <a href="http://www.bookup.org">
+              <img src="images/bookup.png" id="bookup-logo"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div> <a name="music" />
+      <div class="section">
+        <h2>Music</h2>
+        <p>Music has been as much a hobby as a field of study for me since middle school, when I took up the drum set. I learned jazz
+          alongside classical music, but I've always loved rock and alternative music. Nobody teaches classes on that, so a couple of
+          friends and I threw a band together--check us out on <a href="https://soundcloud.com/band-ana">SoundCloud</a>!
+          I also took part in the Performing Arts Institute in my area, where I was introduced to conductor Matt Marsit, who in turn
+          introduced me to Dartmouth College. Since arriving here, I've been exploring new fields in music--French Horn, composition,
+          and maybe soon some conducting! I also do a little bit of teaching, leading biweekly sectionals as Hanover High School, and
+          working every Saturday in the winter with the Dartmouth Youth Wind Ensemble, made up of middle schoolers from the
+          Upper Valley.</p>
       </div>
     </div>
 
