@@ -1,0 +1,26 @@
+div {
+  text-align: center;
+}
+
+div h1 {
+  font-family: serif;
+  font-size: 48px;
+}
+
+div h3 {
+  font-family: Helvetica;
+  font-size: 28px;
+}
+
+div p {
+  font-size: 24px;
+  font-family: serif;
+}
+
+#fbLink {
+  color: blue;
+}
+
+#tinderLink {
+  color: red;
+}
