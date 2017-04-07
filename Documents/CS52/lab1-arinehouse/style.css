@@ -1,0 +1,324 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* image from http://tnbabasketball.com/wp-content/themes/tnba1/img/background.jpg */
+  background-image: url(images/bballcourt.jpg);
+  background-size: cover;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav h1 {
+  margin: 5px;
+  text-align: left;
+}
+
+nav ul {
+  font-weight: normal;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+#sign-in {
+  border: 3px solid #FFFFFF;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   opacity: 0;
+}
+
+.drop-down {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 500px;
+  margin-left: 100px;
+}
+
+.slogan {
+  text-align: left;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.slogan h1 {
+  font-family: 'Suez One', serif;
+  font-size: 50px;
+}
+
+.slogan p {
+  font-size: 25px;
+}
+
+.email-entry {
+  padding: 20px;
+  background-color: rgba(140, 140, 140, 0.5);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/* input styling with help from https://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069 */
+.form input {
+  flex-grow: 4;
+  height: 50px;
+  white-space: nowrap;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  padding-left: 45px;
+  margin: 1px;
+  border-radius: 5px;
+  font-size: 16pt;
+}
+
+.form button {
+  flex-grow: 1;
+  height: 52px;
+  font-family: 'Candal', sans-serif;
+  border: none;
+  margin: 1px;
+  border-radius: 5px;
+  font-size: 16pt;
+  background-color: #60B25A;
+  color: #FFFFFF;
+}
+
+.form button:hover{
+  opacity: 0.5;
+}
+
+.email-entry p {
+  margin-bottom: 0;
+}
+
+.quicklinks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.quicklinks ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.quicklinks ul li {
+  list-style-type: none;
+  font-size: 8pt;
+  margin: 5px;
+}
+
+.quicklinks ul i {
+  display: none;
+}
+
+.quicklink-title {
+  color: #60B25A; /* #6A56F1; */
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+
+footer img {
+  width: 35px;
+  height: 35px;
+  margin: 15px;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    border: 3px solid #FFFFFF;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  /* Default State */
+  .drop-down {
+     display: none;
+     opacity: 0%;
+     transition: opacity 2s ease-in-out 1s;
+  }
+
+  /* with help from http://stackoverflow.com/questions/3250790/making-a-div-that-covers-the-entire-page */
+  /* Toggled State */
+  input[type=checkbox]:checked + div {
+    opacity: 100%;
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #6A56F1;
+  }
+
+  input[type=checkbox]:checked + div #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 20px;
+    background-color: inherit;
+  }
+
+  input[type=checkbox]:checked + div #header i {
+    margin-right: 30px;
+  }
+
+  input[type=checkbox]:checked + div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+  }
+
+  input[type=checkbox]:checked + div ul li {
+    display: flex;
+    list-style-type: none;
+    background-color: #6A56F1;
+    padding: 20px;
+  }
+
+  input[type=checkbox]:checked + div ul li:hover {
+    background-color: #2D2372;
+  }
+
+  .email-entry {
+    align-items: center;
+    align-self: flex-start;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .slogan h1 {
+    width: 80vw;
+  }
+
+  .slogan p {
+    width: 80vw;
+  }
+
+  .quicklinks {
+    width: 100vw;
+    flex-direction: column;
+    align-items: stretch;
+    background: #6A56F1;
+  }
+
+  .quicklinks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .quicklinks ul li:not(.quicklink-title) {
+    display: none;
+  }
+
+  .quicklinks ul li {
+    color: #FFFFFF;
+  }
+
+  .quicklinks ul i {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  .footer {
+    align-self: stretch;
+  }
+}
